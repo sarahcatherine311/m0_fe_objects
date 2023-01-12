@@ -13,19 +13,20 @@ foods = {
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+Object.keys(foods);
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
-// YOUR CODE HERE
+Object.values(foods);
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
-// YOUR CODE HERE
+foods.grapes;
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
-// YOUR CODE HERE
+foods.bananas = 20;
+console.log(foods);
 
 
 #-------------------
@@ -38,18 +39,24 @@ foods = {
 
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
+var email = {
+  to: "sender@email.com",
+  from: "reciever@email.com",
+  date: "01/12/2022",
+  subject: "Coding issue",
+  body: "I am having a coding isssue"
+}
 
 // Write code that logs your email object to the terminal.
-
+console.log(email)
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
-// YOUR CODE HERE
+Object.keys(email);
 
 // Write code that logs all of the 'values' of the email object 
 // you created above:
-// YOUR CODE HERE
-
+Object.values(email);
 
 #-------------------
 // Part 3: Many Emails - CHALLENGE!
@@ -99,3 +106,29 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+emails = [
+  {
+    to: "sender@email.com",
+    from: "reciever@email.com",
+    date: "01/12/2022",
+    subject: "Coding issue",
+    body: "I am having a coding isssue"
+  },
+  {
+    to: "sender2@email.com",
+    from: "reciever2@email.com",
+    date: "01/13/2022",
+    subject: "Coding issue2",
+    body: "I am having another coding isssue"
+  },
+  {
+    to: "sender3@email.com",
+    from: "reciever3@email.com",
+    date: "01/14/2022",
+    subject: "Coding issue3",
+    body: "I am having another hard coding isssue"
+  }
+];
+
+console.log(emails);
